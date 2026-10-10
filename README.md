@@ -81,6 +81,8 @@ npm run dev
 
 The frontend works without the backend for in-browser algorithms; it shows a notice for the ones that need the API.
 
+**Using VS Code?** After the installs above, press **Ctrl+Shift+B** to start both servers, or open *Run and Debug* and choose **Debug API (FastAPI)** to set breakpoints in the backend.
+
 ## 🧪 Tests
 
 ```bash
