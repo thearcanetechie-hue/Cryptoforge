@@ -2,6 +2,10 @@
 
 **A full-stack cryptography playground.** Encrypt, decode and hash text or files with 27 algorithms — AES-256-GCM, RSA-OAEP, Fernet, classical ciphers, encodings and hash functions — and learn how each one works.
 
+**🌐 Live demo: [cryptoforge-nu.vercel.app](https://cryptoforge-nu.vercel.app)** · API docs: [cryptoforge-api.vercel.app/docs](https://cryptoforge-api.vercel.app/docs)
+
+[![CI](https://github.com/thearcanetechie-hue/Cryptoforge/actions/workflows/ci.yml/badge.svg)](https://github.com/thearcanetechie-hue/Cryptoforge/actions/workflows/ci.yml)
+
 ![CryptoForge home page](docs/home.png)
 
 ![Encode workspace](docs/encode.png)
@@ -81,7 +85,7 @@ The frontend works without the backend for in-browser algorithms; it shows a not
 
 ```bash
 cd backend && pip install -r requirements-dev.txt && pytest     # 105 tests
-cd frontend && npm test                                          # 163 tests
+cd frontend && npm test                                          # 169 tests
 ```
 
 Backend tests round-trip every reversible algorithm with Unicode input, check known test vectors, wrong keys, tampering, RSA size limits and malformed input. Frontend tests check browser/Python parity and the main user flows. GitHub Actions runs both suites, ESLint and a production build on every push.

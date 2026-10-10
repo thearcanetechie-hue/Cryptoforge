@@ -13,9 +13,10 @@ async function request(path, options = {}) {
   } catch {
     throw new ApiError('Cannot reach the CryptoForge API. Start the backend (see README) or check VITE_API_URL.');
   }
-  const data = await res.json().catch(() => ({}));
+  const data = await res.json().catch(() => null);
+  if (res.ok && data === null) throw new ApiError('The API returned an unexpected response. Check VITE_API_URL.');
   if (!res.ok) {
-    const detail = Array.isArray(data.detail) ? data.detail.map(d => d.msg).join('; ') : data.detail;
+    const detail = Array.isArray(data?.detail) ? data.detail.map(d => d.msg).join('; ') : data?.detail;
     throw new ApiError(detail || `Request failed (${res.status})`);
   }
   return data;
@@ -28,6 +29,8 @@ const postJson = (path, body) =>
 export async function getAlgorithms() {
   try {
     const algorithms = await request('/algorithms', { signal: AbortSignal.timeout(4000) });
+    const valid = Object.values(algorithms ?? {}).some(list => Array.isArray(list) && list.length);
+    if (!valid) throw new ApiError('Unexpected /algorithms response');
     return { algorithms, online: true };
   } catch {
     return { algorithms: FALLBACK_ALGORITHMS, online: false };
