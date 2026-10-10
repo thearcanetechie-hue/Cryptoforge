@@ -1,0 +1,233 @@
+{
+  "symmetric": [
+    {
+      "id": "aes",
+      "name": "AES-256-GCM",
+      "category": "symmetric",
+      "description": "Authenticated encryption; key derived from your passphrase with PBKDF2",
+      "needsKey": true,
+      "encodeOnly": false,
+      "generateKey": true
+    },
+    {
+      "id": "fernet",
+      "name": "Fernet",
+      "category": "symmetric",
+      "description": "AES-128-CBC + HMAC-SHA256 with a random 32-byte key",
+      "needsKey": true,
+      "encodeOnly": false,
+      "generateKey": true
+    },
+    {
+      "id": "3des",
+      "name": "Triple DES",
+      "category": "symmetric",
+      "description": "Legacy block cipher — included for learning, not for new systems",
+      "needsKey": true,
+      "encodeOnly": false,
+      "generateKey": true
+    }
+  ],
+  "asymmetric": [
+    {
+      "id": "rsa",
+      "name": "RSA-2048 (OAEP)",
+      "category": "asymmetric",
+      "description": "Public-key encryption for short messages (≤190 bytes)",
+      "needsKey": true,
+      "encodeOnly": false,
+      "generateKey": true
+    }
+  ],
+  "classic": [
+    {
+      "id": "caesar",
+      "name": "Caesar Cipher",
+      "category": "classic",
+      "description": "Shift every letter by a fixed amount",
+      "needsKey": true,
+      "encodeOnly": false,
+      "keyType": "number"
+    },
+    {
+      "id": "vigenere",
+      "name": "Vigenère Cipher",
+      "category": "classic",
+      "description": "Polyalphabetic cipher driven by a keyword",
+      "needsKey": true,
+      "encodeOnly": false
+    },
+    {
+      "id": "atbash",
+      "name": "Atbash Cipher",
+      "category": "classic",
+      "description": "Mirror the alphabet: A↔Z, B↔Y…",
+      "needsKey": false,
+      "encodeOnly": false
+    },
+    {
+      "id": "rot13",
+      "name": "ROT13",
+      "category": "classic",
+      "description": "Caesar cipher with a fixed shift of 13",
+      "needsKey": false,
+      "encodeOnly": false
+    },
+    {
+      "id": "morse",
+      "name": "Morse Code",
+      "category": "classic",
+      "description": "Dots and dashes; letters split by spaces, words by /",
+      "needsKey": false,
+      "encodeOnly": false
+    }
+  ],
+  "encoding": [
+    {
+      "id": "base64",
+      "name": "Base64",
+      "category": "encoding",
+      "description": "Binary-to-text encoding with 64 symbols",
+      "needsKey": false,
+      "encodeOnly": false
+    },
+    {
+      "id": "base32",
+      "name": "Base32",
+      "category": "encoding",
+      "description": "Case-insensitive encoding with 32 symbols",
+      "needsKey": false,
+      "encodeOnly": false
+    },
+    {
+      "id": "base85",
+      "name": "Base85",
+      "category": "encoding",
+      "description": "Compact encoding with 85 symbols",
+      "needsKey": false,
+      "encodeOnly": false
+    },
+    {
+      "id": "hex",
+      "name": "Hexadecimal",
+      "category": "encoding",
+      "description": "Each byte as two hex digits",
+      "needsKey": false,
+      "encodeOnly": false
+    },
+    {
+      "id": "binary",
+      "name": "Binary",
+      "category": "encoding",
+      "description": "Each byte as eight bits",
+      "needsKey": false,
+      "encodeOnly": false
+    },
+    {
+      "id": "octal",
+      "name": "Octal",
+      "category": "encoding",
+      "description": "Each byte as a base-8 number",
+      "needsKey": false,
+      "encodeOnly": false
+    },
+    {
+      "id": "decimal",
+      "name": "Decimal Codes",
+      "category": "encoding",
+      "description": "Each character as its decimal code point",
+      "needsKey": false,
+      "encodeOnly": false
+    },
+    {
+      "id": "unicode",
+      "name": "Unicode Points",
+      "category": "encoding",
+      "description": "Each character as U+XXXX",
+      "needsKey": false,
+      "encodeOnly": false
+    },
+    {
+      "id": "url",
+      "name": "URL Encoding",
+      "category": "encoding",
+      "description": "Percent-encoding for URLs",
+      "needsKey": false,
+      "encodeOnly": false
+    },
+    {
+      "id": "html",
+      "name": "HTML Entities",
+      "category": "encoding",
+      "description": "Escape characters that are special in HTML",
+      "needsKey": false,
+      "encodeOnly": false
+    }
+  ],
+  "hashing": [
+    {
+      "id": "sha256",
+      "name": "SHA-256",
+      "category": "hashing",
+      "description": "256-bit SHA-2 digest",
+      "needsKey": false,
+      "encodeOnly": true
+    },
+    {
+      "id": "sha512",
+      "name": "SHA-512",
+      "category": "hashing",
+      "description": "512-bit SHA-2 digest",
+      "needsKey": false,
+      "encodeOnly": true
+    },
+    {
+      "id": "sha3_256",
+      "name": "SHA3-256",
+      "category": "hashing",
+      "description": "256-bit SHA-3 (Keccak) digest",
+      "needsKey": false,
+      "encodeOnly": true
+    },
+    {
+      "id": "sha3_512",
+      "name": "SHA3-512",
+      "category": "hashing",
+      "description": "512-bit SHA-3 (Keccak) digest",
+      "needsKey": false,
+      "encodeOnly": true
+    },
+    {
+      "id": "blake2b",
+      "name": "BLAKE2b",
+      "category": "hashing",
+      "description": "Fast 512-bit digest",
+      "needsKey": false,
+      "encodeOnly": true
+    },
+    {
+      "id": "blake2s",
+      "name": "BLAKE2s",
+      "category": "hashing",
+      "description": "Fast 256-bit digest for small devices",
+      "needsKey": false,
+      "encodeOnly": true
+    },
+    {
+      "id": "sha1",
+      "name": "SHA-1",
+      "category": "hashing",
+      "description": "160-bit digest — collision-broken, legacy only",
+      "needsKey": false,
+      "encodeOnly": true
+    },
+    {
+      "id": "md5",
+      "name": "MD5",
+      "category": "hashing",
+      "description": "128-bit digest — broken, checksums only",
+      "needsKey": false,
+      "encodeOnly": true
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+[
+ {
+  "alg": "base64",
+  "key": "",
+  "text": "Hello, World!",
+  "encoded": "SGVsbG8sIFdvcmxkIQ=="
+ },
+ {
+  "alg": "base64",
+  "key": "",
+  "text": "naïve café — 日本語 🔐",
+  "encoded": "bmHDr3ZlIGNhZsOpIOKAlCDml6XmnKzoqp4g8J+UkA=="
+ },
+ {
+  "alg": "base64",
+  "key": "",
+  "text": "<a href='x?y=1&z=2'>(hi)*!</a>",
+  "encoded": "PGEgaHJlZj0neD95PTEmej0yJz4oaGkpKiE8L2E+"
+ },
+ {
+  "alg": "base64",
+  "key": "",
+  "text": "  spaced   out  ",
+  "encoded": "ICBzcGFjZWQgICBvdXQgIA=="
+ },
+ {
+  "alg": "base64",
+  "key": "",
+  "text": "",
+  "encoded": ""
+ },
+ {
+  "alg": "hex",
+  "key": "",
+  "text": "Hello, World!",
+  "encoded": "48656c6c6f2c20576f726c6421"
+ },
+ {
+  "alg": "hex",
+  "key": "",
+  "text": "naïve café — 日本語 🔐",
+  "encoded": "6e61c3af766520636166c3a920e2809420e697a5e69cace8aa9e20f09f9490"
+ },
+ {
+  "alg": "hex",
+  "key": "",
+  "text": "<a href='x?y=1&z=2'>(hi)*!</a>",
+  "encoded": "3c6120687265663d27783f793d31267a3d32273e286869292a213c2f613e"
+ },
+ {
+  "alg": "hex",
+  "key": "",
+  "text": "  spaced   out  ",
+  "encoded": "20207370616365642020206f75742020"
+ },
+ {
+  "alg": "hex",
+  "key": "",
+  "text": "",
+  "encoded": ""
+ },
+ {
+  "alg": "binary",
+  "key": "",
+  "text": "Hello, World!",
+  "encoded": "01001000 01100101 01101100 01101100 01101111 00101100 00100000 01010111 01101111 01110010 01101100 01100100 00100001"
+ },
+ {
+  "alg": "binary",
+  "key": "",
+  "text": "naïve café — 日本語 🔐",
+  "encoded": "01101110 01100001 11000011 10101111 01110110 01100101 00100000 01100011 01100001 01100110 11000011 10101001 00100000 11100010 10000000 10010100 00100000 11100110 10010111 10100101 11100110 10011100 10101100 11101000 10101010 10011110 00100000 11110000 10011111 10010100 10010000"
+ },
+ {
+  "alg": "binary",
+  "key": "",
+  "text": "<a href='x?y=1&z=2'>(hi)*!</a>",
+  "encoded": "00111100 01100001 00100000 01101000 01110010 01100101 01100110 00111101 00100111 01111000 00111111 01111001 00111101 00110001 00100110 01111010 00111101 00110010 00100111 00111110 00101000 01101000 01101001 00101001 00101010 00100001 00111100 00101111 01100001 00111110"
+ },
+ {
+  "alg": "binary",
+  "key": "",
+  "text": "  spaced   out  ",
+  "encoded": "00100000 00100000 01110011 01110000 01100001 01100011 01100101 01100100 00100000 00100000 00100000 01101111 01110101 01110100 00100000 00100000"
+ },
+ {
+  "alg": "binary",
+  "key": "",
+  "text": "",
+  "encoded": ""
+ },
+ {
+  "alg": "octal",
+  "key": "",
+  "text": "Hello, World!",
+  "encoded": "110 145 154 154 157 54 40 127 157 162 154 144 41"
+ },
+ {
+  "alg": "octal",
+  "key": "",
+  "text": "naïve café — 日本語 🔐",
+  "encoded": "156 141 303 257 166 145 40 143 141 146 303 251 40 342 200 224 40 346 227 245 346 234 254 350 252 236 40 360 237 224 220"
+ },
+ {
+  "alg": "octal",
+  "key": "",
+  "text": "<a href='x?y=1&z=2'>(hi)*!</a>",
+  "encoded": "74 141 40 150 162 145 146 75 47 170 77 171 75 61 46 172 75 62 47 76 50 150 151 51 52 41 74 57 141 76"
+ },
+ {
+  "alg": "octal",
+  "key": "",
+  "text": "  spaced   out  ",
+  "encoded": "40 40 163 160 141 143 145 144 40 40 40 157 165 164 40 40"
+ },
+ {
+  "alg": "octal",
+  "key": "",
+  "text": "",
+  "encoded": ""
+ },
+ {
+  "alg": "decimal",
+  "key": "",
+  "text": "Hello, World!",
+  "encoded": "72 101 108 108 111 44 32 87 111 114 108 100 33"
+ },
+ {
+  "alg": "decimal",
+  "key": "",
+  "text": "naïve café — 日本語 🔐",
+  "encoded": "110 97 239 118 101 32 99 97 102 233 32 8212 32 26085 26412 35486 32 128272"
+ },
+ {
+  "alg": "decimal",
+  "key": "",
+  "text": "<a href='x?y=1&z=2'>(hi)*!</a>",
+  "encoded": "60 97 32 104 114 101 102 61 39 120 63 121 61 49 38 122 61 50 39 62 40 104 105 41 42 33 60 47 97 62"
+ },
+ {
+  "alg": "decimal",
+  "key": "",
+  "text": "  spaced   out  ",
+  "encoded": "32 32 115 112 97 99 101 100 32 32 32 111 117 116 32 32"
+ },
+ {
+  "alg": "decimal",
+  "key": "",
+  "text": "",
+  "encoded": ""
+ },
+ {
+  "alg": "unicode",
+  "key": "",
+  "text": "Hello, World!",
+  "encoded": "U+0048 U+0065 U+006C U+006C U+006F U+002C U+0020 U+0057 U+006F U+0072 U+006C U+0064 U+0021"
+ },
+ {
+  "alg": "unicode",
+  "key": "",
+  "text": "naïve café — 日本語 🔐",
+  "encoded": "U+006E U+0061 U+00EF U+0076 U+0065 U+0020 U+0063 U+0061 U+0066 U+00E9 U+0020 U+2014 U+0020 U+65E5 U+672C U+8A9E U+0020 U+1F510"
+ },
+ {
+  "alg": "unicode",
+  "key": "",
+  "text": "<a href='x?y=1&z=2'>(hi)*!</a>",
+  "encoded": "U+003C U+0061 U+0020 U+0068 U+0072 U+0065 U+0066 U+003D U+0027 U+0078 U+003F U+0079 U+003D U+0031 U+0026 U+007A U+003D U+0032 U+0027 U+003E U+0028 U+0068 U+0069 U+0029 U+002A U+0021 U+003C U+002F U+0061 U+003E"
+ },
+ {
+  "alg": "unicode",
+  "key": "",
+  "text": "  spaced   out  ",
+  "encoded": "U+0020 U+0020 U+0073 U+0070 U+0061 U+0063 U+0065 U+0064 U+0020 U+0020 U+0020 U+006F U+0075 U+0074 U+0020 U+0020"
+ },
+ {
+  "alg": "unicode",
+  "key": "",
+  "text": "",
+  "encoded": ""
+ },
+ {
+  "alg": "url",
+  "key": "",
+  "text": "Hello, World!",
+  "encoded": "Hello%2C%20World%21"
+ },
+ {
+  "alg": "url",
+  "key": "",
+  "text": "naïve café — 日本語 🔐",
+  "encoded": "na%C3%AFve%20caf%C3%A9%20%E2%80%94%20%E6%97%A5%E6%9C%AC%E8%AA%9E%20%F0%9F%94%90"
+ },
+ {
+  "alg": "url",
+  "key": "",
+  "text": "<a href='x?y=1&z=2'>(hi)*!</a>",
+  "encoded": "%3Ca%20href%3D%27x%3Fy%3D1%26z%3D2%27%3E%28hi%29%2A%21%3C%2Fa%3E"
+ },
+ {
+  "alg": "url",
+  "key": "",
+  "text": "  spaced   out  ",
+  "encoded": "%20%20spaced%20%20%20out%20%20"
+ },
+ {
+  "alg": "url",
+  "key": "",
+  "text": "",
+  "encoded": ""
+ },
+ {
+  "alg": "html",
+  "key": "",
+  "text": "Hello, World!",
+  "encoded": "Hello, World!"
+ },
+ {
+  "alg": "html",
+  "key": "",
+  "text": "naïve café — 日本語 🔐",
+  "encoded": "naïve café — 日本語 🔐"
+ },
+ {
+  "alg": "html",
+  "key": "",
+  "text": "<a href='x?y=1&z=2'>(hi)*!</a>",
+  "encoded": "&lt;a href=&#x27;x?y=1&amp;z=2&#x27;&gt;(hi)*!&lt;/a&gt;"
+ },
+ {
+  "alg": "html",
+  "key": "",
+  "text": "  spaced   out  ",
+  "encoded": "  spaced   out  "
+ },
+ {
+  "alg": "html",
+  "key": "",
+  "text": "",
+  "encoded": ""
+ },
+ {
+  "alg": "caesar",
+  "key": "-29",
+  "text": "Hello, World!",
+  "encoded": "Ebiil, Tloia!"
+ },
+ {
+  "alg": "caesar",
+  "key": "-29",
+  "text": "naïve café — 日本語 🔐",
+  "encoded": "kxïsb zxcé — 日本語 🔐"
+ },
+ {
+  "alg": "caesar",
+  "key": "-29",
+  "text": "<a href='x?y=1&z=2'>(hi)*!</a>",
+  "encoded": "<x eobc='u?v=1&w=2'>(ef)*!</x>"
+ },
+ {
+  "alg": "caesar",
+  "key": "-29",
+  "text": "  spaced   out  ",
+  "encoded": "  pmxzba   lrq  "
+ },
+ {
+  "alg": "caesar",
+  "key": "-29",
+  "text": "",
+  "encoded": ""
+ },
+ {
+  "alg": "vigenere",
+  "key": "Lemon 42",
+  "text": "Hello, World!",
+  "encoded": "Sixzb, Hsdzq!"
+ },
+ {
+  "alg": "vigenere",
+  "key": "Lemon 42",
+  "text": "naïve café — 日本語 🔐",
+  "encoded": "yeïhs pljé — 日本語 🔐"
+ },
+ {
+  "alg": "vigenere",
+  "key": "Lemon 42",
+  "text": "<a href='x?y=1&z=2'>(hi)*!</a>",
+  "encoded": "<l ldss='i?c=1&l=2'>(vv)*!</l>"
+ },
+ {
+  "alg": "vigenere",
+  "key": "Lemon 42",
+  "text": "  spaced   out  ",
+  "encoded": "  dtmqro   sgh  "
+ },
+ {
+  "alg": "vigenere",
+  "key": "Lemon 42",
+  "text": "",
+  "encoded": ""
+ },
+ {
+  "alg": "atbash",
+  "key": "",
+  "text": "Hello, World!",
+  "encoded": "Svool, Dliow!"
+ },
+ {
+  "alg": "atbash",
+  "key": "",
+  "text": "naïve café — 日本語 🔐",
+  "encoded": "mzïev xzué — 日本語 🔐"
+ },
+ {
+  "alg": "atbash",
+  "key": "",
+  "text": "<a href='x?y=1&z=2'>(hi)*!</a>",
+  "encoded": "<z sivu='c?b=1&a=2'>(sr)*!</z>"
+ },
+ {
+  "alg": "atbash",
+  "key": "",
+  "text": "  spaced   out  ",
+  "encoded": "  hkzxvw   lfg  "
+ },
+ {
+  "alg": "atbash",
+  "key": "",
+  "text": "",
+  "encoded": ""
+ },
+ {
+  "alg": "rot13",
+  "key": "",
+  "text": "Hello, World!",
+  "encoded": "Uryyb, Jbeyq!"
+ },
+ {
+  "alg": "rot13",
+  "key": "",
+  "text": "naïve café — 日本語 🔐",
+  "encoded": "anïir pnsé — 日本語 🔐"
+ },
+ {
+  "alg": "rot13",
+  "key": "",
+  "text": "<a href='x?y=1&z=2'>(hi)*!</a>",
+  "encoded": "<n uers='k?l=1&m=2'>(uv)*!</n>"
+ },
+ {
+  "alg": "rot13",
+  "key": "",
+  "text": "  spaced   out  ",
+  "encoded": "  fcnprq   bhg  "
+ },
+ {
+  "alg": "rot13",
+  "key": "",
+  "text": "",
+  "encoded": ""
+ },
+ {
+  "alg": "morse",
+  "key": "",
+  "text": "HELLO, WORLD!",
+  "encoded": ".... . .-.. .-.. --- --..-- / .-- --- .-. .-.. -.. -.-.--"
+ },
+ {
+  "alg": "morse",
+  "key": "",
+  "text": "NAÏVE CAFÉ — 日本語 🔐",
+  "encoded": "-. .- ? ...- . / -.-. .- ..-. ? / ? / ? ? ? / ?"
+ },
+ {
+  "alg": "morse",
+  "key": "",
+  "text": "<A HREF='X?Y=1&Z=2'>(HI)*!</A>",
+  "encoded": "? .- / .... .-. . ..-. -...- .----. -..- ..--.. -.-- -...- .---- .-... --.. -...- ..--- .----. ? -.--. .... .. -.--.- ? -.-.-- ? -..-. .- ?"
+ },
+ {
+  "alg": "morse",
+  "key": "",
+  "text": "  SPACED   OUT  ",
+  "encoded": "... .--. .- -.-. . -.. / --- ..- -"
+ },
+ {
+  "alg": "morse",
+  "key": "",
+  "text": "",
+  "encoded": ""
+ },
+ {
+  "alg": "sha1",
+  "key": "",
+  "text": "Hello, World!",
+  "encoded": "0a0a9f2a6772942557ab5355d76af442f8f65e01"
+ },
+ {
+  "alg": "sha1",
+  "key": "",
+  "text": "naïve café — 日本語 🔐",
+  "encoded": "cf24a4b8dffb0fc9db728152a34f296547383456"
+ },
+ {
+  "alg": "sha1",
+  "key": "",
+  "text": "<a href='x?y=1&z=2'>(hi)*!</a>",
+  "encoded": "684f3dc327ef0183ae0251e64ea8c5ad3c48eb12"
+ },
+ {
+  "alg": "sha1",
+  "key": "",
+  "text": "  spaced   out  ",
+  "encoded": "99486968ef41ab6675820fa4bedbef4b8a9eff26"
+ },
+ {
+  "alg": "sha1",
+  "key": "",
+  "text": "",
+  "encoded": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+ },
+ {
+  "alg": "sha256",
+  "key": "",
+  "text": "Hello, World!",
+  "encoded": "dffd6021bb2bd5b0af676290809ec3a53191dd81c7f70a4b28688a362182986f"
+ },
+ {
+  "alg": "sha256",
+  "key": "",
+  "text": "naïve café — 日本語 🔐",
+  "encoded": "2524285d0c05ddfea344e70d270d0b4a45dbf272d60aababbe580af530596dda"
+ },
+ {
+  "alg": "sha256",
+  "key": "",
+  "text": "<a href='x?y=1&z=2'>(hi)*!</a>",
+  "encoded": "9c2e694a7871ccc569560f165becc531b6360111ecc9f482dbd357473de4d5ee"
+ },
+ {
+  "alg": "sha256",
+  "key": "",
+  "text": "  spaced   out  ",
+  "encoded": "5cb2c0e63ac0c8776ca12bb531d3b91cab898ebaec51fe5711ad81a6ea94ab93"
+ },
+ {
+  "alg": "sha256",
+  "key": "",
+  "text": "",
+  "encoded": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ {
+  "alg": "sha512",
+  "key": "",
+  "text": "Hello, World!",
+  "encoded": "374d794a95cdcfd8b35993185fef9ba368f160d8daf432d08ba9f1ed1e5abe6cc69291e0fa2fe0006a52570ef18c19def4e617c33ce52ef0a6e5fbe318cb0387"
+ },
+ {
+  "alg": "sha512",
+  "key": "",
+  "text": "naïve café — 日本語 🔐",
+  "encoded": "78e090cefb0bed57bd7f423b32a4ed7b68fed61dc94ddfb8cf922f4329af4e715d3b74302a4dd78898dbb217ccc3084df07a98996050b55ba60472db875a078c"
+ },
+ {
+  "alg": "sha512",
+  "key": "",
+  "text": "<a href='x?y=1&z=2'>(hi)*!</a>",
+  "encoded": "77d4428e5c948f0056206315450f753592c4e3483fc846eb5c2a6d30656a27e6c9cddde4a9f1879f924a3fc3cb55a040066595ab5c5ddcd68e78bb7312c571b6"
+ },
+ {
+  "alg": "sha512",
+  "key": "",
+  "text": "  spaced   out  ",
+  "encoded": "d6189135d9a4df545b9241882e968e3094ebbf5bd7cd75b0cd30d3ec8c8e181a248286ae1223632a8f9d5cfd6b6a88673e54ba401aff344b709fa505d085eaea"
+ },
+ {
+  "alg": "sha512",
+  "key": "",
+  "text": "",
+  "encoded": "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e"
+ }
+]
