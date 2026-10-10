@@ -1,0 +1,32 @@
+<style>
+  body { font: 13px/1.5 Inter, system-ui, sans-serif; margin: 16px; color: #1a1917; }
+  #s { margin-bottom: 14px; }
+  button { font: inherit; font-weight: 600; padding: 8px 14px; border-radius: 8px; border: 1px solid #e0ddd7; background: #fff; cursor: pointer; margin-right: 6px; }
+  button.primary { background: #2563eb; border-color: #2563eb; color: #fff; }
+  button:disabled { opacity: 0.45; cursor: default; }
+</style>
+<div id="s">Collecting the design…</div>
+<button id="save" class="primary" disabled>Save cryptoforge-design.json</button>
+<button id="close">Close</button>
+<script>
+  let json = null;
+  const s = document.getElementById('s'), save = document.getElementById('save');
+  onmessage = e => {
+    const m = e.data.pluginMessage;
+    if (!m) return;
+    if (m.type === 'status') s.textContent = m.text;
+    if (m.type === 'data') {
+      json = m.json;
+      s.innerHTML = `Ready (${(json.length / 1048576).toFixed(1)} MB). Save it into the <b>cryptoforge/design/</b> folder, then tell Claude.`;
+      save.disabled = false;
+    }
+  };
+  save.onclick = () => {
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([json], { type: 'application/json' }));
+    a.download = 'cryptoforge-design.json';
+    a.click();
+    s.textContent = 'Saved. You can close this window.';
+  };
+  document.getElementById('close').onclick = () => parent.postMessage({ pluginMessage: { type: 'close' } }, '*');
+</script>

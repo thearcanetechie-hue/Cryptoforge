@@ -1,0 +1,14 @@
+{
+  "name": "CryptoForge Design Sync",
+  "id": "cryptoforge-design-sync",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html",
+  "editorType": ["figma"],
+  "documentAccess": "dynamic-page",
+  "networkAccess": { "allowedDomains": ["none"] },
+  "menu": [
+    { "name": "Build / complete the design", "command": "build" },
+    { "name": "Export design for Claude", "command": "export" }
+  ]
+}
