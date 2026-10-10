@@ -1,0 +1,43 @@
+{
+  // Terminal → Run Task… (or Ctrl+Shift+B for the default "dev" task)
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "api",
+      "detail": "FastAPI backend on http://localhost:8000 (docs at /docs)",
+      "type": "shell",
+      "command": "${workspaceFolder}/backend/.venv/Scripts/python -m uvicorn main:app --reload",
+      "linux": { "command": "${workspaceFolder}/backend/.venv/bin/python -m uvicorn main:app --reload" },
+      "osx": { "command": "${workspaceFolder}/backend/.venv/bin/python -m uvicorn main:app --reload" },
+      "options": { "cwd": "${workspaceFolder}/backend" },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": { "group": "dev", "panel": "dedicated" }
+    },
+    {
+      "label": "web",
+      "detail": "React frontend on http://localhost:5173",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": { "cwd": "${workspaceFolder}/frontend" },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": { "group": "dev", "panel": "dedicated" }
+    },
+    {
+      "label": "dev",
+      "detail": "Start backend and frontend side by side",
+      "dependsOn": ["api", "web"],
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "test",
+      "detail": "Run backend and frontend test suites",
+      "type": "shell",
+      "command": "cd backend; ${workspaceFolder}/backend/.venv/Scripts/python -m pytest -q; cd ../frontend; npm test",
+      "group": "test",
+      "problemMatcher": []
+    }
+  ]
+}

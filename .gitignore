@@ -11,8 +11,14 @@ __pycache__/
 .env
 .env.local
 .vercel/
-.vscode/
 .idea/
+
+# Share the project's VS Code tasks/debug configs, but not personal settings
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/extensions.json
 .DS_Store
 Thumbs.db
 *.log

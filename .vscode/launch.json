@@ -1,0 +1,25 @@
+{
+  // Run and Debug panel (Ctrl+Shift+D). Set a breakpoint, press F5, then use the app.
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug API (FastAPI)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["main:app", "--reload"],
+      "cwd": "${workspaceFolder}/backend",
+      "python": "${workspaceFolder}/backend/.venv/Scripts/python.exe",
+      "jinja": true
+    },
+    {
+      "name": "Debug API tests (pytest)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["-q"],
+      "cwd": "${workspaceFolder}/backend",
+      "python": "${workspaceFolder}/backend/.venv/Scripts/python.exe"
+    }
+  ]
+}
